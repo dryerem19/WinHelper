@@ -1,0 +1,97 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:WinHelper.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="WinHelper.Views.AboutComputerView">
+    <Design.DataContext>
+        <vm:AboutComputerViewModel/>
+    </Design.DataContext>
+    
+    <Grid RowDefinitions="Auto, Auto">
+        <ListBox Grid.Row="0" Items="{Binding GpuCollection}" Margin="0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Video Adapters"/>
+                        <Separator Height="1" Background="Black" Opacity="0.5" Margin="0, 5, 0, 5"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Name: "/>
+                            <TextBlock Text="{Binding Name}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Processor: "/>
+                            <TextBlock Text="{Binding Processor}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Memory: "/>
+                            <TextBlock Text="{Binding Memory}"/>
+                            <TextBlock Text=" GB"/>
+                        </StackPanel>
+                        <Separator Height="1" Background="Black" Opacity="0.5" Margin="0, 5, 0, 5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox Grid.Row="1" Items="{Binding CpuCollection}" Margin="0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Processors"/>
+                        <Separator Height="1" Background="Black" Opacity="0.5" Margin="0, 5, 0, 5"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Name: "/>
+                            <TextBlock Text="{Binding Name}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Caption: "/>
+                            <TextBlock Text="{Binding Caption}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Manufacturer: "/>
+                            <TextBlock Text="{Binding Manufacturer}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Socket: "/>
+                            <TextBlock Text="{Binding Socket}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Cores: "/>
+                            <TextBlock Text="{Binding NumberOfCores}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Logic cores: "/>
+                            <TextBlock Text="{Binding NumberOfLogicalCores}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Threads: "/>
+                            <TextBlock Text="{Binding NumberOfThreads}"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="L2 Cache: "/>
+                            <TextBlock Text="{Binding L2CacheSize}"/>
+                            <TextBlock Text=" KB"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="L3 Cache: "/>
+                            <TextBlock Text="{Binding L3CacheSize}"/>
+                            <TextBlock Text=" MB"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Current Clock Speed: "/>
+                            <TextBlock Text="{Binding CurrentClockSpeed}"/>
+                            <TextBlock Text=" MHz"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Max Clock Speed: "/>
+                            <TextBlock Text="{Binding MaxClockSpeed}"/>
+                            <TextBlock Text=" MHz"/>
+                        </StackPanel>
+                        <Separator Height="1" Background="Black" Opacity="0.5" Margin="0, 5, 0, 5"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</UserControl>

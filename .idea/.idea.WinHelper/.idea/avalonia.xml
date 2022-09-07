@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="WinHelper/Views/AboutComputer.axaml" value="WinHelper/WinHelper.csproj" />
+        <entry key="WinHelper/Views/AboutComputerView.axaml" value="WinHelper/WinHelper.csproj" />
+        <entry key="WinHelper/Views/MainWindow.axaml" value="WinHelper/WinHelper.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

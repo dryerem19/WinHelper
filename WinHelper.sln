@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinHelper", "WinHelper\WinHelper.csproj", "{494952FF-F388-44B5-8CE0-FB0DF47BA0BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{494952FF-F388-44B5-8CE0-FB0DF47BA0BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494952FF-F388-44B5-8CE0-FB0DF47BA0BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494952FF-F388-44B5-8CE0-FB0DF47BA0BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494952FF-F388-44B5-8CE0-FB0DF47BA0BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
